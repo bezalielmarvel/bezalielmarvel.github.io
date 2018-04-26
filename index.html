@@ -3,27 +3,19 @@
 <title>bezalielmarvel</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/custom.css">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Roboto", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-#container {
-  left: 50%;
-  top: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-</style>
+
+
 <body>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3; width:300px; font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_open()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h2 class="w3-padding-64"><b>bezalielmarvel.</b></h3>
+    <h2 id="type-it" class="w3-padding-64"><b>bezalielmarvel.</b></h3>
   </div>
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">home</a> 
@@ -48,26 +40,16 @@ body {font-size:16px;}
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
   <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-xxxlarge"><b>Bonjour! <br> Je m'appelle Bezaliel Marvel</b></h1>
+  <div class="w3-container" style="margin-top:120px" id="showcase">
+    <h1 class="w3-jumbo"><b>Bonjour! <br> Je m'appelle Bezaliel Marvel <br> et je suis  <p id="type-it"></p></b></h1>
     <h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   </div>
-  
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
-      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
-    </div>
 
-    <div class="w3-half">
-      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
-    </div>
-  </div>
+  <div class="sticky w3-text-white"> aaasdasdasdasdasdasdasdasdasdasdasdaaasdasdasdasdasdasdasdasdasdasdasdaaasdasdasdasdasdasdasdasdasdasdasd</div>
+  
+ 
+
 
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
@@ -202,13 +184,36 @@ body {font-size:16px;}
     </form>  
   </div>
 
+  <script src="typeit.js"></script>
+
+
+<h2 id="type-it"></h2>
+
+<script>
+  // The simplest example
+new TypeIt('#type-it', {
+        speed: 100,
+        strings: ['bezalielmarvel.'],
+        loop: true,
+        breakLines: false
+      });
+</script>
+
+
+
+
 <!-- End page content -->
 </div>
 
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">© <b>bezalielmarvel</b></a></p></div>
+
+</script>
+
+
 
 <script>
+
 // Script to open and close sidebar
 function w3_open() {
     document.getElementById("mySidebar").style.display = "500px";

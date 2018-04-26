@@ -1,0 +1,39 @@
+
+
+/* custom css */
+
+body,h1,h2,h3,h4,h5 {
+	font-family: "Roboto", sans-serif
+}
+
+body {
+	font-size:16px;
+}
+
+.w3-half img {
+	margin-bottom:-6px;
+	margin-top:16px;
+	opacity:0.8;
+	cursor:pointer
+}
+
+.w3-half img:hover {
+	opacity:1
+}
+
+#container {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    padding: 50px;
+    font-size: 20px;
+
+}
