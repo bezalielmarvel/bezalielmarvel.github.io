@@ -1,54 +1,98 @@
 <!DOCTYPE html>
 <html>
-<title>bezalielmarvel.</title>
+<title>bezalielmarvel</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/custom.css">
+<!--<link rel="stylesheet" href="css/base.css">-->
+<!--<link rel="stylesheet" href="css/demo1.css">-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
+<style>
+            .progress {
+                height: 10px;
+                margin: 10px;
+            }
 
-<body>
+            .progress > svg {
+                height: 100%;
+                display: block;
+            }
+
+            .compet {
+               margin-left: 50px;
+               margin-right: 50px;
+               -webkit-column-rule-style: solid;
+               -moz-column-rule-style: solid;
+               column-rule-style: solid;
+            }
+
+            .example {
+  -webkit-columns: 2 300px;
+  -moz-columns: 2 300px;
+  columns: 2 300px;
+  -webkit-column-gap: 7em;
+  -moz-column-gap: 7em;
+  column-gap: 7em;
+  column-rule-style: hidden;
+  -webkit-column-rule-style: hidden;
+  -moz-column-rule-style: hidden;
+  -webkit-column-rule-width: 4px;
+  -moz-column-rule-width: 4px;
+  column-rule-width: 4px;
+  -webkit-column-rule-color: #e74c3c;
+  -moz-column-rule-color: #e74c3c;
+  column-rule-color: #e74c3c;
+  margin: 2em 10em 3em 3em;
+}
+        </style>
+
+<body id="js-scrollspy">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3; width:300px; font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_open()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h2 id="type-it" class="w3-padding-64"><b>bezalielmarvel.</b></h3>
+    <h1 id="type-it" class="w3-padding-64"><b>bezalielmarvel.</b></h1>
   </div>
-  <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">home</a>
-    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">profil</a>
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">compétence</a>
-    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">expérience</a>
-    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">portfolio</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">contact</a>
-  </div>
+  <ul class="w3-bar-block js-scrollspy-nav nav">
+    <a href="#profil" class="w3-bar-item w3-button w3-hover-white js-scroll-to-profil">profil</a>
+    <a href="#competences" class="w3-bar-item w3-button w3-hover-white js-scroll-to-competences">compétences</a>
+    <a href="#experiences" class="w3-bar-item w3-button w3-hover-white js-scroll-to-experiences">expériences</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hover-white">portfolio</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hover-white">contact</a>
+  </ul>
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Company Name</span>
+<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
+  <span>bezalielmarvel.</span>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
+<div class="w3-main js-scrollspy-content" style="margin-left:340px;margin-right:40px">
 
   <!-- Header -->
-  <div class="w3-container" style="margin-top:120px" id="showcase">
-    <h1 class="w3-jumbo"><b>Bonjour! <br> Je m'appelle Bezaliel Marvel <br> et je suis  <p id="type-it"></p></b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+  <div class="w3-container" style="margin-top:200px" id="profil">
+    <h1 class="header-text w3-text-black"><b>profil.</b></h1>
+    <a class="w3-xlarge" id="example4"></a>
+    <a class="w3-xlarge ex" id="example5"></a>
+
+
   </div>
-
-  <div class="sticky w3-text-white"> aaasdasdasdasdasdasdasdasdasdasdasdaaasdasdasdasdasdasdasdasdasdasdasdaaasdasdasdasdasdasdasdasdasdasdasd</div>
-
-
 
 
   <!-- Modal for full size images on click-->
@@ -61,143 +105,114 @@
   </div>
 
   <!-- Services -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Services.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+  <div class="w3-container" id="competences" style="margin-top:300px">
+    <h1 class="header-text w3-text-black"><b>compétences.</b></h1>
+    <div class="compet example">
+    <a class="w3-xlarge">python</a>
+    <div class="python" id="python"></div>
+    <a class="w3-xlarge">java</a>
+    <div class="java" id="java"></div>
+    <a class="w3-xlarge">html</a>
+    <div class="html" id="html"></div>
+    <a class="w3-xlarge">css</a>
+    <div class="css" id="css"></div>
+    <a class="w3-xlarge">javascript</a>
+    <div class="javas" id="javas"></div>
+    <a class="w3-xlarge">photoshop</a>
+    <div class="ps" id="ps"></div>
+    <a class="w3-xlarge">agile/scrum</a>
+    <div class="as" id="as"></div>
+    <a class="w3-xlarge">git</a>
+    <div class="git" id="git"></div>
+    <a class="w3-xlarge">wordpress</a>
+    <div class="wp" id="wp"></div>
+    <a class="w3-xlarge">bash shell</a>
+    <div class="bash" id="bash"></div>
+
+  </div>
   </div>
 
   <!-- Designers -->
-  <div class="w3-container" id="designers" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Designers.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>The best team in the world.</p>
-    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  <div class="w3-container" id="experiences" style="margin-top:300px">
+    <h1 class="header-text w3-text-black"><b>expériences.</b></h1>
+
+<ul class="timeline">
+<li class="timeline-event">
+  <label class="timeline-event-icon"></label>
+  <div class="timeline-event-copy">
+    <p class="timeline-event-thumbnail">Septembre 2017 - Présent</p>
+    <h3>Radio PPI Dunia</h3>
+    <h4><strong>Chef de l'équipe du Développement Web & Mobile</strong> </h4>
+    <p><strong>Schwerpunkt: Frontend-Entwicklung</strong><br>Entwickeln von anspruchsvollen, animierten, responsive und adaptive Webseiten mit HTML5, SCSS, jQuery; für alle Browser, optimiert für Desktop, Notebook, Smartphones und Tablets (iOS, Android, Windows).</p>
+    <p><strong>Projektmanagement mit Scrum</strong><br>Ständiges Verbessern des agilen Entwicklungsprozesses beispielsweise durch Grunt, Yeoman, GIT, JIRA und BrowserStack.</p>
+  </div>
+</li>
+<li class="timeline-event">
+  <label class="timeline-event-icon"></label>
+  <div class="timeline-event-copy">
+    <p class="timeline-event-thumbnail">Juin 2017</p>
+    <h3>National High Jakarta School</h3>
+    <h4><strong>Stagiaire en Informatique et Marketing</strong></h4>
+    <p>Konzeption, Design und Produktion von Digitalen Magazinen mit InDesign, der Adobe Digital Publishing Suite und HTML5. Co-Autorin der Fachbücher "Digitales Publizieren für Tablets" und "Adobe Digital Publishing Suite" erschienen im dpunkt.verlag.</p>
+  </div>
+</li>
+<li class="timeline-event">
+  <label class="timeline-event-icon"></label>
+  <div class="timeline-event-copy">
+    <p class="timeline-event-thumbnail">Septembre 2017 - Présent</p>
+    <h3>Sorbonne Université, Jussieu</h3>
+    <h4><strong>Employé du Service Handicap Santé Etudiant</strong></h4>
+    <p><strong>Systemarchitektur, Consulting</strong><br>Konzeption und Modellierung von Systemen und APIs für Digital Publishing und Entitlement nach SOA</p>
+  </div>
+</li>
+<li class="timeline-event">
+  <label class="timeline-event-icon"></label>
+  <div class="timeline-event-copy">
+    <p class="timeline-event-thumbnail">Août 2017</p>
+    <h3>Hotel Mercure Maurepas, Saint Quentin</h3>
+    <h4><strong>Serveur polyvalent</strong></h4>
+    <p><strong>Systemarchitektur, Consulting</strong><br>Konzeption und Modellierung von Systemen und APIs für Digital Publishing und Entitlement nach SOA</p>
+  </div>
+</li>
+<li class="timeline-event">
+  <label class="timeline-event-icon"></label>
+  <div class="timeline-event-copy">
+    <p class="timeline-event-thumbnail">Août 2016</p>
+    <h3>BENLUX International Duty Free, Paris</h3>
+    <h4><strong>Vendeur en magasin</strong></h4>
+    <p><strong>Systemarchitektur, Consulting</strong><br>Konzeption und Modellierung von Systemen und APIs für Digital Publishing und Entitlement nach SOA</p>
+  </div>
+</li>
+<li class="timeline-event">
+  <label class="timeline-event-icon"></label>
+  <div class="timeline-event-copy">
+    <p class="timeline-event-thumbnail">Septembre 2017 - Présent</p>
+    <h3>Service Handicap Santé Etudiant</h3>
+    <h4><strong>Employé</strong></h4>
+    <p><strong>Systemarchitektur, Consulting</strong><br>Konzeption und Modellierung von Systemen und APIs für Digital Publishing und Entitlement nach SOA</p>
+  </div>
+</li>
+</ul>
+
   </div>
 
-  <!-- The Team -->
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>John Doe</h3>
-          <p class="w3-opacity">CEO & Founder</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
-          <h3>Jane Doe</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container">
-          <h3>Mike Ross</h3>
-          <p class="w3-opacity">Architect</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+
 
   <!-- Packages / Pricing Tables -->
-  <div class="w3-container" id="packages" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Packages.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+  <div class="w3-container" id="portfolio" style="margin-top:75px">
+    <h1 class="header-text w3-text-black"><b>portfolio.</b></h1>
+
     <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
   </div>
 
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-        <li class="w3-padding-16">Floorplanning</li>
-        <li class="w3-padding-16">10 hours support</li>
-        <li class="w3-padding-16">Photography</li>
-        <li class="w3-padding-16">20% furniture discount</li>
-        <li class="w3-padding-16">Good deals</li>
-        <li class="w3-padding-16">
-          <h2>$ 199</h2>
-          <span class="w3-opacity">per room</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-        </li>
-      </ul>
-    </div>
 
-    <div class="w3-half">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
-        <li class="w3-padding-16">Floorplanning</li>
-        <li class="w3-padding-16">50 hours support</li>
-        <li class="w3-padding-16">Photography</li>
-        <li class="w3-padding-16">50% furniture discount</li>
-        <li class="w3-padding-16">GREAT deals</li>
-        <li class="w3-padding-16">
-          <h2>$ 249</h2>
-          <span class="w3-opacity">per room</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-  </div>
 
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
-    </form>
+    <h1 class="header-text w3-text-black"><b>contact.</b></h1>
+
   </div>
 
-  <script src="typeit.js"></script>
-
-
-<h2 id="type-it"></h2>
-
-<script>
-  // The simplest example
-new TypeIt('#type-it', {
-        speed: 100,
-        strings: ['bezalielmarvel.'],
-        loop: true,
-        breakLines: false
-      });
-</script>
 
 
 
@@ -208,33 +223,29 @@ new TypeIt('#type-it', {
 <!-- W3.CSS Container -->
 <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">© <b>bezalielmarvel</b></a></p></div>
 
-</script>
+<script src="js/scrollspy.js"></script>
+		<script>
+			var spy = new ScrollSpy('#js-scrollspy', {
+				nav: '.js-scrollspy-nav > a',
+				className: 'w3-white',
+				callback: function () {
+				}
+			});
+
+		</script>
+
+<script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.5.6/dist/progressbar.js"></script>
+
+
+<script src="js/typeit.js"></script>
+<script src="js/main.js"></script>
+<script src="js/anime.min.js"></script>
+<script src="js/charming.min.js"></script>
+<script src="js/demo1.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
 
 
 
-<script>
-
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "500px";
-    document.getElementById("myOverlay").style.display = "500px";
-}
-
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-</script>
 
 </body>
 </html>
