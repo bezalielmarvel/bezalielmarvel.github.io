@@ -29,7 +29,7 @@ new TypeIt('#example4', {
 
 
 new TypeIt('#example5', {
-    strings: ['<strong>développeur web.</strong>', '<strong>designer graphique.</strong>','<strong>musicien.</strong>'],
+    strings: ['<strong>développeur informatique.</strong>', '<strong>designer graphique.</strong>','<strong>musicien.</strong>'],
     loop: true,
     breakLines: false,
     startDelay: 10500,
@@ -140,14 +140,29 @@ window.onload = function onLoad() {
                                         svgStyle: {width: '100%', height: '100%'}
                                         });
 
-                                        python.animate(0.7);
-                                        java.animate(0.8);
-                                        html.animate(0.8);
-                                        css.animate(0.8);
-                                        javas.animate(0.7);
-                                        ps.animate(0.8);
-                                        as.animate(0.8);
-                                        git.animate(0.8);
+                                        python.animate(0.3);
+                                        java.animate(0.6);
+                                        html.animate(0.7);
+                                        css.animate(0.6);
+                                        javas.animate(0.2);
+                                        ps.animate(0.7);
+                                        as.animate(0.5);
+                                        git.animate(0.4);
                                         wp.animate(0.7);
-                                        bash.animate(0.8);
+                                        bash.animate(0.6);
 };
+
+// portfolio
+$(function() {
+		var selectedClass = "";
+		$(".fil-cat").click(function(){
+		selectedClass = $(this).attr("data-rel");
+     $("#portfoliox").fadeTo(100, 0.1);
+		$("#portfoliox div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
+    setTimeout(function() {
+      $("."+selectedClass).fadeIn().addClass('scale-anm');
+      $("#portfoliox").fadeTo(300, 1);
+    }, 300);
+
+	});
+});
