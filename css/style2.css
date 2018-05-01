@@ -366,15 +366,15 @@ height: auto;
 border: 3px solid;
 vertical-align: middle;
 -webkit-appearance: none;
-color: #fff;
-background-color: rgba(0, 0, 0, 0);
+color: #000;
+background-color: #fff;
+border-color: #000;
 }
 
 .btn:hover {
 text-decoration: none;
 color: #fff;
 background-color: #000;
-border: 3px solid;
 }
 
 .btn:focus {
