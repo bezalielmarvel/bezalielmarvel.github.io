@@ -140,6 +140,7 @@ window.onload = function onLoad() {
                                         svgStyle: {width: '100%', height: '100%'}
                                         });
 
+                                        document.getElementById("competences").onclick = function onClick() {
                                         python.animate(0.3);
                                         java.animate(0.6);
                                         html.animate(0.7);
@@ -150,7 +151,10 @@ window.onload = function onLoad() {
                                         git.animate(0.4);
                                         wp.animate(0.7);
                                         bash.animate(0.6);
+                                      }
 };
+
+
 
 // portfolio
 $(function() {
