@@ -58,27 +58,30 @@
     let allentries = [];
     const sections = Array.from(document.querySelectorAll('.content__section'));
     // Preload all the images in the page..
-	imagesLoaded(document.querySelectorAll('.content__img'), () => {
-        document.body.classList.remove('loading');
-        if ('IntersectionObserver' in window) {
-            document.body.classList.add('ioapi');
 
-            observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if ( entry.intersectionRatio > 0.5 ) {
-                        const newcurrent = sections.indexOf(entry.target);
-                        if ( newcurrent === current ) return;
-                        const direction = newcurrent > current;
-                        if (current >= 0 ) {
-                            allentries[current].exit(direction ? 'down' : 'up');
-                        }
-                        allentries[newcurrent].enter(direction ? 'down' : 'up');
-                        current = newcurrent;
+    document.body.classList.remove('loading');
+    if ('IntersectionObserver' in window) {
+        document.body.classList.add('ioapi');
+
+        observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                console.log("IR "+entry.intersectionRatio)
+                if ( entry.intersectionRatio > 0.5 ) {
+                    const newcurrent = sections.indexOf(entry.target);
+                    console.log(newcurrent);
+                    if ( newcurrent === current ) return;
+                    const direction = newcurrent > current;
+                    if (current >= 0 ) {
+                        console.log("shuffle")
+                        allentries[current].exit(direction ? 'down' : 'up');
                     }
-                });
-            }, { threshold: 0.5 });
+                    allentries[newcurrent].enter(direction ? 'down' : 'up');
+                    current = newcurrent;
+                }
+            });
+        }, { threshold: 0.5 });
             
-            sections.forEach(section => allentries.push(new Entry(section)));
-        }
-    });
+        sections.forEach(section => allentries.push(new Entry(section)));
+    }
+
 }
