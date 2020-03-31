@@ -2,14 +2,14 @@
 
 /* Color schemes */
 .demo-1 {
-	--color-text: #efedeb;
-	--color-bg: #0e0e0e;
-	--color-link: #1920f3;
-	--color-link-hover: #555;
-	--color-info: #fff;
+	--color-text: #000000;
+	--color-bg: #ffffff;
+	--color-link: #000000;
+	--color-link-hover: rgb(0, 0, 0);
+	--color-info: rgb(0, 0, 0);
 	--color-main-text: #1d1c1c;
-	--color-scroll-text: #efedeb;
-	--font-scroll-text: 'Roboto Mono', monospace;
+	--color-scroll-text: #000000;
+	/* --font-scroll-text: 'Open Sans', sans-serif; */
 	--fontsize-scroll-text: 8vw;
 }
 
@@ -21,7 +21,7 @@
 	content: '';
 	position: absolute;
 	left: 0;
-	height: 69%;
+	height: 12%;
 	bottom: 0;
 	width: calc(6vmax - 1.5rem);
 	background: var(--color-link);
